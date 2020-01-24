@@ -6,24 +6,25 @@ USE checkout_description_db;
 
 CREATE TABLE products (
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    title VARCHAR NOT NULL,
+    title VARCHAR(255) NOT NULL,
     description TEXT NOT NULL,
-    price FLOAT NOT NULL
+    price FLOAT NOT NULL,
+    materials VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE options (
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    product_id INT FOREIGN KEY REFERENCES products(id) NOT NULL,
-    name VARCHAR NOT NULL,
-    value VARCHAR NOT NULL
+    product_id INT NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    value VARCHAR(255) NOT NULL,
+    FOREIGN KEY (product_id) REFERENCES products(id)
 );
 
 CREATE TABLE sellers (
     id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    company VARCHAR NOT NULL,
-    seller VARCHAR NOT NULL,
-    picture VARCHAR NOT NULL,
-    location VARCHAR NOT NULL
+    name VARCHAR(255) NOT NULL,
+    picture VARCHAR(255) NOT NULL,
+    location VARCHAR(255)
 );
 
 CREATE TABLE reviews (
