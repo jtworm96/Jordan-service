@@ -23,7 +23,9 @@ class App extends React.Component {
             <ShippingDetails />
             <hr />
             <About />
+            <hr />
             <FAQ />
+            <hr />
         </div>
     )
   }

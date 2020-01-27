@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class Variations extends React.Component {
+export default class Profile extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -8,8 +8,8 @@ export default class Variations extends React.Component {
 
   render () {
     return (
-        <div className="variations">
-            VARIATIONS
+        <div className="profile">
+            PROFILE
         </div>
     )
   }

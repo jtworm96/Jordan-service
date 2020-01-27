@@ -6,20 +6,20 @@ import BuyButtons from './BuyButtons.jsx';
 import Nudge from './Nudge.jsx';
 
 export default class BuyBox extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {};
-    }
-  
-    render () {
-      return (
-          <div className="buy-box">
-              <Reviews />
-              <Title />
-              <Price />
-              <BuyButtons />
-              <Nudge />
-          </div>
-      )
-    }
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
+
+  render () {
+    return (
+        <div className="buy-box">
+            <Reviews />
+            <Title />
+            <Price />
+            <BuyButtons />
+            <Nudge />
+        </div>
+    )
+  }
+}
