@@ -15,7 +15,7 @@ export default class BuyBox extends React.Component {
     return (
         <div className="buy-box">
             <Reviews username={"HARDCODED"} count={1337} />
-            <Title />
+            <Title title={"Harry Potter [HARDCODED] - Bandanas and Accessories"} />
             <Price />
             <BuyButtons />
             <Nudge />
