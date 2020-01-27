@@ -2,3 +2,10 @@
     width: 33%;
     float: right;
 }
+
+.reviews, .review-name, .review-stars, .review-count {
+    display: inline-block;
+}
+.review-stars, .review-count {
+    margin-left: 5px;
+}

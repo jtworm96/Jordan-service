@@ -14,7 +14,7 @@ export default class BuyBox extends React.Component {
   render () {
     return (
         <div className="buy-box">
-            <Reviews />
+            <Reviews username={"HARDCODED"} count={1337} />
             <Title />
             <Price />
             <BuyButtons />
