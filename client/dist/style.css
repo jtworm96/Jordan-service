@@ -44,3 +44,19 @@
     margin-top: 0;
     margin-bottom: 10px;
 }
+
+.buynow, .addcart {
+    border-radius: 3px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    height: 35px;
+}
+
+.addcart {
+    color: white;
+    background-color: black;
+    margin-top: 12px;
+}
