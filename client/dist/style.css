@@ -17,3 +17,30 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.pricecontainer {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.saleprice, .price {
+    display: inline-block;
+}
+
+.saleprice {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.price {
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.savings {
+    color: rgb(10, 153, 81);
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
