@@ -60,3 +60,16 @@
     background-color: black;
     margin-top: 12px;
 }
+
+.nudge, .carttext {
+    display: inline-block;
+}
+
+.nudge {
+    width: 15%;
+    height: 48px;
+}
+.carttext {
+    width: 85%;
+    height: 48px;
+}
