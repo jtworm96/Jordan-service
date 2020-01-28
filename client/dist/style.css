@@ -1,5 +1,6 @@
 .container {
-    width: 33%;
+    width: 30%;
+    margin-right: 5%;
     float: right;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -72,4 +73,5 @@
 .carttext {
     width: 85%;
     height: 48px;
+    font-size: 18px;
 }
