@@ -1,4 +1,77 @@
 .container {
-    width: 33%;
+    width: 30%;
+    margin-right: 5%;
     float: right;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.reviews, .review-name, .review-stars, .review-count {
+    display: inline-block;
+}
+.review-stars, .review-count {
+    margin-left: 5px;
+}
+
+.title {
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pricecontainer {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.saleprice, .price {
+    display: inline-block;
+}
+
+.saleprice {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.price {
+    font-size: 13px;
+    text-decoration: line-through;
+}
+
+.savings {
+    color: rgb(10, 153, 81);
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.buynow, .addcart {
+    border-radius: 3px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    height: 35px;
+}
+
+.addcart {
+    color: white;
+    background-color: black;
+    margin-top: 12px;
+}
+
+.nudge, .carttext {
+    display: inline-block;
+}
+
+.nudge {
+    width: 15%;
+    height: 48px;
+}
+.carttext {
+    width: 85%;
+    height: 48px;
+    font-size: 18px;
 }
