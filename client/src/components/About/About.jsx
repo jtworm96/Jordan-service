@@ -11,10 +11,10 @@ export default class About extends React.Component {
   render () {
     return (
         <div className="about">
-            MEET hardcoded
-            <Profile />
-            <MessageButton />
-            This seller usually responds within a few hours.
+            Meet <a href="" className="aboutname">{this.props.name}</a>
+            <Profile name={"HARDCODED NAME"} location={"HARDCODED LOCATION"} />
+            <MessageButton name={"HARDCODED NAME"} />
+            <p className="aboutresponds">This seller usually responds <strong>within a few hours.</strong></p>
         </div>
     )
   }
