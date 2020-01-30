@@ -12,7 +12,7 @@ export default class ShippingDetails extends React.Component {
     return (
         <div className="shipping-details">
             <strong>Shipping & Returns</strong>
-            <Shipping location={"Germany"}/>
+            <Shipping shippingDate={"Feb 13 - 17"} location={"Germany"}/>
             <Returns />
         </div>
     )
