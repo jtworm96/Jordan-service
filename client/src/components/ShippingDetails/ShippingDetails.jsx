@@ -11,7 +11,7 @@ export default class ShippingDetails extends React.Component {
   render () {
     return (
         <div className="shipping-details">
-            Shipping & Returns
+            <strong>Shipping & Returns</strong>
             <Shipping />
             <Returns />
         </div>
