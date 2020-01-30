@@ -22,7 +22,7 @@ class App extends React.Component {
             <hr/>
             <ShippingDetails />
             <hr />
-            <About />
+            <About name={"HARDCODED"}/>
             <hr />
             <FAQ />
             <hr />

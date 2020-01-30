@@ -8,8 +8,8 @@ export default class MessageButton extends React.Component {
 
   render () {
     return (
-        <div className="message-button">
-            MESSAGE BUTTON
+        <div>
+          <button className="message-button">Message {this.props.name}</button>
         </div>
     )
   }

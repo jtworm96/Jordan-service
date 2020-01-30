@@ -185,3 +185,53 @@ hr {
 .shopPolicies {
     color: black;
 }
+
+.aboutname {
+    color: black;
+}
+
+.aboutname:hover {
+    color: gray;
+}
+
+.profile {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.profileimg {
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.profileinfo {
+    display: inline-block;
+}
+
+.profilename {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: small;
+}
+
+.profilelocation {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.profilemarker {
+    width: 20px;
+}
+
+.aboutresponds {
+    margin-bottom: 15px;
+}
+
+.message-button {
+    padding: 12px;
+    border-radius: 3px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: small;
+}
