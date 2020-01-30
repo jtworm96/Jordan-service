@@ -9,7 +9,9 @@ export default class Returns extends React.Component {
   render () {
     return (
         <div className="returns">
-            RETURNS
+            <strong>Returns and exchanges accepted</strong>
+            <p className="returnExceptions">Exceptions may apply.</p>
+            <a href="" className="shopPolicies">View shop policies</a>
         </div>
     )
   }

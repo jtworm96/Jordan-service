@@ -1,3 +1,7 @@
+hr {
+    border-color: rgba(231, 231, 231, 0.247);
+}
+
 .container {
     width: 30%;
     margin-right: 5%;
@@ -171,4 +175,13 @@
 .shippingcost {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.returnExceptions {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.shopPolicies {
+    color: black;
 }
