@@ -25,9 +25,11 @@ export default class Shipping extends React.Component {
                 Made just for you in 1-2 weeks
               </strong>
               <br/>
-              From Australia
+              From {this.props.location}
               <br/>
-              $3.51 shipping to United States, 78704
+              <p className="shippingcost">
+                $3.51 shipping to United States, 78704
+              </p>
             </div>
         </div>
     )

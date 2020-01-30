@@ -12,7 +12,7 @@ export default class ShippingDetails extends React.Component {
     return (
         <div className="shipping-details">
             <strong>Shipping & Returns</strong>
-            <Shipping />
+            <Shipping location={"Germany"}/>
             <Returns />
         </div>
     )

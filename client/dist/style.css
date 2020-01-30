@@ -167,3 +167,8 @@
     color: black;
     font-weight: lighter;
 }
+
+.shippingcost {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
