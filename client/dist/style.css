@@ -267,3 +267,28 @@ hr {
     margin-bottom: 15px;
     font-size: small;
 }
+
+.faqbutton {
+    border: none;
+    font-size: medium;
+    text-decoration: underline;
+}
+
+.faqbutton:hover {
+    color: gray;
+}
+
+.faqexpanded {
+    visibility: visible;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.faqclosed {
+    visibility: hidden;
+    height: 0;
+}
+
+.faqlink {
+    color: black;
+}
