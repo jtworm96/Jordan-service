@@ -66,6 +66,16 @@ hr {
     margin-top: 12px;
 }
 
+.buynow:hover {
+    background-color: black;
+    color: white;
+}
+
+.addcart:hover {
+    background-color: #3d3d3d;
+    border-color: #3d3d3d;
+}
+
 .nudge, .carttext {
     display: inline-block;
 }
