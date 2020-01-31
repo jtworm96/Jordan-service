@@ -6,7 +6,7 @@ hr {
     width: 30%;
     margin-right: 5%;
     float: right;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
 }
 
 .reviews, .review-name, .review-stars, .review-count {
@@ -50,6 +50,28 @@ hr {
     margin-bottom: 10px;
 }
 
+.variations-quantity {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border-width: 1px;
+    font-size: medium;
+    background-color: white;
+    width: 10%;
+    height: 35px;
+}
+
+.variation {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border-width: 1px;
+    font-size: medium;
+    background-color: white;
+    width: 75%;
+    height: 35px;
+}
+
 .buynow, .addcart {
     border-radius: 3px;
     border-color: black;
@@ -64,6 +86,16 @@ hr {
     color: white;
     background-color: black;
     margin-top: 12px;
+}
+
+.buynow:hover {
+    background-color: black;
+    color: white;
+}
+
+.addcart:hover {
+    background-color: #3d3d3d;
+    border-color: #3d3d3d;
 }
 
 .nudge, .carttext {
