@@ -43,12 +43,8 @@ export default class BuyBox extends React.Component {
         },
         6: {
           bestseller: false,
-          types: [`
-            All prints come signed but I'll be happy to personalize it with your name if like at no additional charge.
-            \n\n
-            Write "No signature" if you want your print unsigned.
-          `],
-          dropdowns: {"textbox": ""},
+          types: [],
+          dropdowns: {},
           quantity: 15
         }
       }
