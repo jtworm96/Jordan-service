@@ -9,3 +9,15 @@ const connection = mysql.createConnection({
 });
 
 connection.connect();
+
+let getListing = (id, callback) => {
+  connection.query('SELECT * FROM products WHERE id=' + id, (error, data) => {
+    if (error) {
+      callback(error, null);
+    } else {
+      callback(null, data);
+    }
+  });
+};
+
+module.exports.getListing = getListing;

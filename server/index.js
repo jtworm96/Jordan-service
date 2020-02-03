@@ -7,6 +7,17 @@ app.use(express.static(__dirname + '/../client/dist'));
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());
 
+app.get("/listings/:listingid", (req, res) => {
+  db.getListing(req.params.listingid, (error, results) => {
+    if (error) {
+      console.error(error);
+    }
+    else {
+      res.send(results);
+    }
+  });
+});
+
 let port = 1337;
 
 app.listen(port, function() {

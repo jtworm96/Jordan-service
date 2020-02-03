@@ -54,14 +54,14 @@ export default class BuyBox extends React.Component {
 
   render () {
     return (
-        <div className="buy-box">
-            <Reviews username={"HARDCODED"} count={1337} />
-            <Title title={"Harry Potter [HARDCODED] - Bandanas and Accessories"} />
-            <Price saleprice={15.00} price={20.00}/>
-            <Variations products={this.state.products} />
-            <BuyButtons />
-            <Nudge />
-        </div>
+      <div className="buy-box">
+        <Reviews username={this.props.listing.name} count={1337} />
+        <Title title={this.props.listing.title} />
+        <Price saleprice={this.props.listing.price - 1 - Math.round(Math.random())} price={this.props.listing.price}/>
+        <Variations product={this.state.products[this.props.listingid]} />
+        <BuyButtons />
+        <Nudge />
+      </div>
     )
   }
 }

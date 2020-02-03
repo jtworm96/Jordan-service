@@ -22,7 +22,7 @@ export default class Nudge extends React.Component {
             <line className="line-left" fill="none" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" x1="21" y1="8" x2="24" y2="11.1"></line>
           </svg>
         </div>
-        <div className="carttext"><strong>Other people want this.</strong> 5 people have this in their carts right now.</div>
+        <div className="carttext"><strong>Other people want this.</strong> {Math.floor(Math.random() * 10) + 1} people have this in their carts right now.</div>
       </div>
     )
   }

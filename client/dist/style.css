@@ -57,7 +57,7 @@ hr {
     border-width: 1px;
     font-size: medium;
     background-color: white;
-    width: 10%;
+    width: 12%;
     height: 35px;
 }
 
@@ -266,6 +266,10 @@ hr {
     margin-top: 15px;
     margin-bottom: 15px;
     font-size: small;
+}
+
+.message-button:hover {
+    background-color: rgba(128, 128, 128, 0.226);
 }
 
 .faqbutton {
