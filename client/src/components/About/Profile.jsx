@@ -9,7 +9,7 @@ export default class Profile extends React.Component {
   render () {
     return (
         <div className="profile">
-            <img className="profileimg" height="100px" src="https://themcaa.org/wp-content/uploads/2015/12/blogpost-placeholder-100x100-300x300.png"></img>
+            <img className="profileimg" height="100px" src={this.props.image}></img>
             <div className="profileinfo">
               <h3 className="profilename">{this.props.name}</h3>
               <p className="profilelocation">

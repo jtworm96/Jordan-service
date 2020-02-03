@@ -28,7 +28,7 @@ export default class Shipping extends React.Component {
               From {this.props.location}
               <br/>
               <p className="shippingcost">
-                $3.51 shipping to United States, 78704
+                ${Math.round(Math.random() * 10)} shipping to United States, 7870{Math.floor(Math.random() * 9)}
               </p>
             </div>
         </div>
