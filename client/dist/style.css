@@ -11,7 +11,14 @@
 
 .checkout-reviews, .checkout-review-name, .checkout-review-stars, .checkout-review-count {
     display: inline-block;
+    text-decoration: none;
+    color: rgb(37, 37, 37);
 }
+
+.checkout-review-name:hover, .checkout-review-count:hover {
+    text-decoration: underline;
+}
+
 .checkout-review-stars, .checkout-review-count {
     margin-left: 5px;
 }
