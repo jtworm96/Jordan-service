@@ -8,10 +8,10 @@ export default class Returns extends React.Component {
 
   render () {
     return (
-        <div className="returns">
+        <div className="checkout-returns">
             <strong>Returns and exchanges accepted</strong>
-            <p className="returnExceptions">Exceptions may apply.</p>
-            <a href="" className="shopPolicies">View shop policies</a>
+            <p className="checkout-returnExceptions">Exceptions may apply.</p>
+            <a href="" className="checkout-shopPolicies">View shop policies</a>
         </div>
     )
   }

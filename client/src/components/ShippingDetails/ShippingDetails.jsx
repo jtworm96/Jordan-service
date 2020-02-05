@@ -10,7 +10,7 @@ export default class ShippingDetails extends React.Component {
 
   render () {
     return (
-        <div className="shipping-details">
+        <div className="checkout-shipping-details">
             <strong>Shipping & Returns</strong>
             <Shipping shippingDate={"Feb 13 - 17"} location={"Germany"}/>
             <Returns />

@@ -8,10 +8,10 @@ export default class BuyButtons extends React.Component {
 
   render () {
     return (
-        <div className="buy-buttons">
-            <button className="buynow">Buy it now</button>
+        <div className="checkout-buy-buttons">
+            <button className="checkout-buynow">Buy it now</button>
             <br/>
-            <button className="addcart">Add to cart</button>
+            <button className="checkout-addcart">Add to cart</button>
         </div>
     )
   }

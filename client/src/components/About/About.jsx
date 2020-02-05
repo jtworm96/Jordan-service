@@ -10,11 +10,11 @@ export default class About extends React.Component {
 
   render () {
     return (
-        <div className="about">
-            Meet <a href="" className="aboutname">{this.props.listing.name}</a>
+        <div className="checkout-about">
+            Meet <a href="" className="checkout-aboutname">{this.props.listing.name}</a>
             <Profile name={this.props.listing.name} location={"Germany"} image={this.props.listing.picture}/>
             <MessageButton name={this.props.listing.name} />
-            <p className="aboutresponds">This seller usually responds <strong>within a few hours.</strong></p>
+            <p className="checkout-aboutresponds">This seller usually responds <strong>within a few hours.</strong></p>
         </div>
     )
   }

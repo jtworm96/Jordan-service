@@ -8,17 +8,17 @@ export default class Shipping extends React.Component {
 
   render () {
     return (
-        <div className="shipping">
+        <div className="checkout-shipping">
             <div>
               <strong>
                 Estimated delivery:
-                <div className="shippingdate">
+                <div className="checkout-shippingdate">
                   {this.props.shippingDate}
-                  <div className="content">
-                    <p className="message">
+                  <div className="checkout-content">
+                    <p className="checkout-message">
                       The estimated delivery date is based on your purchase date, the recipient's location, the seller's processing time and location, and the shipping carrier. Other factors—like placing an order on a weekend or a holiday—may end up pushing the arrival of your item beyond the estimated delivery date. It's our hope that your item gets where it's going as soon as possible, but given the factors involved, this is only an estimate.
                     </p>
-                    <a href="" className="shippingLearnmore">Learn more</a>
+                    <a href="" className="checkout-shippingLearnmore">Learn more</a>
                   </div>
                 </div>
                 <br/>
@@ -27,7 +27,7 @@ export default class Shipping extends React.Component {
               <br/>
               From {this.props.location}
               <br/>
-              <p className="shippingcost">
+              <p className="checkout-shippingcost">
                 ${Math.round(Math.random() * 10)} shipping to United States, 7870{Math.floor(Math.random() * 9)}
               </p>
             </div>

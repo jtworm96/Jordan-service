@@ -9,7 +9,7 @@ export default class MessageButton extends React.Component {
   render () {
     return (
         <div>
-          <button className="message-button">Message {this.props.name}</button>
+          <button className="checkout-message-button">Message {this.props.name}</button>
         </div>
     )
   }

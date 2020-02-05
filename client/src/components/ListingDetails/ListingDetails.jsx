@@ -10,7 +10,7 @@ export default class ListingDetails extends React.Component {
 
   render () {
     return (
-        <div className="listing-details">
+        <div className="checkout-listing-details">
             <h3><strong>Item Details</strong></h3>
             <Handmade />
             <Details description={this.props.description}/>
