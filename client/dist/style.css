@@ -188,7 +188,7 @@
     border-color: transparent transparent #f5f4f4 transparent;
 }
 
-.checkout-shippingdate:hover .content {
+.checkout-shippingdate:hover .checkout-content {
     z-index: 10;
     opacity: 1;
     visibility: visible;
