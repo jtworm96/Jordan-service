@@ -1,10 +1,9 @@
 const mysql = require('mysql');
-require('dotenv').config();
 
 const connection = mysql.createConnection({
-  host : 'localhost',
+  host : 'fec-database.c3s7gc1wdbtz.us-east-2.rds.amazonaws.com',
   user : 'root',
-  password : process.env.DB_PASS,
+  password : 'password',
   database : 'checkout_description_db'
 });
 

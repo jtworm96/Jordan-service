@@ -1,56 +1,56 @@
-hr {
+.checkout-hr {
     border-color: rgba(231, 231, 231, 0.247);
 }
 
-.container {
+.checkout-container {
     width: 30%;
     margin-right: 5%;
     float: right;
     font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
 }
 
-.reviews, .review-name, .review-stars, .review-count {
+.checkout-reviews, .checkout-review-name, .checkout-review-stars, .checkout-review-count {
     display: inline-block;
 }
-.review-stars, .review-count {
+.checkout-review-stars, .checkout-review-count {
     margin-left: 5px;
 }
 
-.title {
+.checkout-title {
     font-weight: normal;
     font-size: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.pricecontainer {
+.checkout-pricecontainer {
     margin-top: 10px;
     margin-bottom: 0;
 }
 
-.saleprice, .price {
+.checkout-saleprice, .checkout-price {
     display: inline-block;
 }
 
-.saleprice {
+.checkout-saleprice {
     font-weight: bolder;
     font-size: 20px;
     margin-right: 5px;
 }
 
-.price {
+.checkout-price {
     font-size: 13px;
     text-decoration: line-through;
 }
 
-.savings {
+.checkout-savings {
     color: rgb(10, 153, 81);
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
-.variations-quantity {
+.checkout-variations-quantity {
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 3px;
@@ -61,7 +61,7 @@ hr {
     height: 35px;
 }
 
-.variation {
+.checkout-variation {
     margin-top: 15px;
     margin-bottom: 15px;
     border-radius: 3px;
@@ -72,7 +72,7 @@ hr {
     height: 35px;
 }
 
-.buynow, .addcart {
+.checkout-buynow, .checkout-addcart {
     border-radius: 3px;
     border-color: black;
     border-width: 2px;
@@ -82,41 +82,41 @@ hr {
     height: 35px;
 }
 
-.addcart {
+.checkout-addcart {
     color: white;
     background-color: black;
     margin-top: 12px;
 }
 
-.buynow:hover {
+.checkout-buynow:hover {
     background-color: black;
     color: white;
 }
 
-.addcart:hover {
+.checkout-addcart:hover {
     background-color: #3d3d3d;
     border-color: #3d3d3d;
 }
 
-.nudge, .carttext {
+.checkout-nudge, .checkout-carttext {
     display: inline-block;
 }
 
-.nudge {
+.checkout-nudge {
     width: 15%;
     height: 48px;
 }
-.carttext {
+.checkout-carttext {
     width: 85%;
     height: 48px;
     font-size: 18px;
 }
 
-.handmadetext {
+.checkout-handmadetext {
     margin-left: 10px;
 }
 
-.details-div-hidden {
+.checkout-details-div-hidden {
     margin-top: 20px;
     width: 100%;
     height: 125px;
@@ -126,13 +126,13 @@ hr {
     -webkit-text-fill-color: transparent;
 }
 
-.details-div-expanded {
+.checkout-details-div-expanded {
     margin-top: 20px;
     width: 100%;
     height: 100%;
 }
 
-.details-expand {
+.checkout-details-expand {
     margin: 0 auto;
     display: block;
     margin-bottom: 20px;
@@ -145,16 +145,16 @@ hr {
     outline: none;
 }
 
-.details-expand:hover {
+.checkout-details-expand:hover {
     background: rgb(231, 231, 231);
 }
 
-.shipping {
+.checkout-shipping {
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.shippingdate {
+.checkout-shippingdate {
     text-decoration: underline;
     text-decoration-style: dashed;
     text-decoration-color: rgb(185, 185, 185);
@@ -162,7 +162,7 @@ hr {
     margin-left: 5px;
 }
 
-.content {
+.checkout-content {
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -177,7 +177,7 @@ hr {
     border-radius: 5px;
   }
 
-.content:before {
+.checkout-content:before {
     position: absolute;
     z-index: -1;
     content: "";
@@ -188,78 +188,78 @@ hr {
     border-color: transparent transparent #f5f4f4 transparent;
 }
 
-.shippingdate:hover .content {
+.checkout-shippingdate:hover .content {
     z-index: 10;
     opacity: 1;
     visibility: visible;
 }
 
-.message {
+.checkout-message {
     text-align: left;
     font-weight: lighter;
 }
 
-.shippingLearnmore {
+.checkout-shippingLearnmore {
     color: black;
     font-weight: lighter;
 }
 
-.shippingcost {
+.checkout-shippingcost {
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.returnExceptions {
+.checkout-returnExceptions {
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.shopPolicies {
+.checkout-shopPolicies {
     color: black;
 }
 
-.aboutname {
+.checkout-aboutname {
     color: black;
 }
 
-.aboutname:hover {
+.checkout-aboutname:hover {
     color: gray;
 }
 
-.profile {
+.checkout-profile {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.profileimg {
+.checkout-profileimg {
     border-radius: 50px;
     margin-right: 20px;
 }
 
-.profileinfo {
+.checkout-profileinfo {
     display: inline-block;
 }
 
-.profilename {
+.checkout-profilename {
     margin-top: 0;
     margin-bottom: 0;
     font-size: small;
 }
 
-.profilelocation {
+.checkout-profilelocation {
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.profilemarker {
+.checkout-profilemarker {
     width: 20px;
 }
 
-.aboutresponds {
+.checkout-aboutresponds {
     margin-bottom: 15px;
 }
 
-.message-button {
+.checkout-message-button {
     padding: 12px;
     border-radius: 3px;
     font-weight: bold;
@@ -268,31 +268,31 @@ hr {
     font-size: small;
 }
 
-.message-button:hover {
+.checkout-message-button:hover {
     background-color: rgba(128, 128, 128, 0.226);
 }
 
-.faqbutton {
+.checkout-faqbutton {
     border: none;
     font-size: medium;
     text-decoration: underline;
 }
 
-.faqbutton:hover {
+.checkout-faqbutton:hover {
     color: gray;
 }
 
-.faqexpanded {
+.checkout-faqexpanded {
     visibility: visible;
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.faqclosed {
+.checkout-faqclosed {
     visibility: hidden;
     height: 0;
 }
 
-.faqlink {
+.checkout-faqlink {
     color: black;
 }

@@ -15,12 +15,12 @@ export default class FAQ extends React.Component {
 
   render () {
     return (
-        <div className="FAQ">
-            <button className="faqbutton" onClick={() => {this.toggleFAQ()}}>FAQ</button>
-            <div className={this.state.expanded ? "faqexpanded" : "faqclosed"}>
+        <div className="checkout-FAQ">
+            <button className="checkout-faqbutton" onClick={() => {this.toggleFAQ()}}>FAQ</button>
+            <div className={this.state.expanded ? "checkout-faqexpanded" : "checkout-faqclosed"}>
               Q: Who worked on this right column?
               <br/>
-              A: <a className="faqlink" href="https://github.com/Etsy-FEC/Checkout-Description/blob/master/README.md" target="_blank">Sager Williams</a>
+              A: <a className="checkout-faqlink" href="https://github.com/Etsy-FEC/Checkout-Description/blob/master/README.md" target="_blank">Sager Williams</a>
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ export default class Handmade extends React.Component {
 
   render () {
     return (
-        <div className="handmade">
+        <div className="checkout-handmade">
             <div>
               <span className="inline-svg pr-xs-1 icon-b-2">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.1 62.5" width="30" height="30" aria-hidden="true" focusable="false">
@@ -16,7 +16,7 @@ export default class Handmade extends React.Component {
                   </path>
                 </svg>
               </span>
-              <span className="handmadetext">Handmade</span>
+              <span className="checkout-handmadetext">Handmade</span>
             </div>
         </div>
     )

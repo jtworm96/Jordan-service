@@ -18,7 +18,7 @@ export default class Variations extends React.Component {
           for (let j = 0; j < this.props.product.inputType.dropdown.length; j++) {
             options.push(<option key={Math.random() * 100000}>{this.props.product.inputType.dropdown[j]}</option>);
           }
-          let selector = <select className="variation" key={Math.random() * 100000}>{options}</select>;
+          let selector = <select className="checkout-variation" key={Math.random() * 100000}>{options}</select>;
           variations.push(selector);
         } else {
           variations.push(<input></input>);
@@ -32,20 +32,21 @@ export default class Variations extends React.Component {
   }
 
   createQuantity() {
+    let quantity = this.props.product ? this.props.product.quantity : 5;
     let options = [];
 
-    for (let i = 1; i < this.props.product.quantity + 1; i++) {
+    for (let i = 1; i < quantity + 1; i++) {
       options.push(<option key={i}>{i}</option>);
     }
 
-    let selector = <select className="variations-quantity">{options}</select>;
+    let selector = <select className="checkout-variations-quantity">{options}</select>;
     return selector;
   }
 
   render () {
     return (
-        <div className="variations">
-          {this.createVariations()}
+        <div className="checkout-variations">
+          {this.props.product ? this.createVariations() : false}
           Quantity
           <br/>
           {this.createQuantity()}

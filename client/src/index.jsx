@@ -7,11 +7,14 @@ import ShippingDetails from './components/ShippingDetails/ShippingDetails.jsx';
 import About from './components/About/About.jsx';
 import FAQ from './components/FAQ/FAQ.jsx';
 
+const baseURL = 'http://feccheckout-env.7hthmefjiv.us-east-2.elasticbeanstalk.com/';
+// const baseURL = 'http://localhost:1337/';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      listingId: 1,
+      listingId: 651186954,
       listing: {}
     };
 
@@ -27,10 +30,14 @@ class App extends React.Component {
 
   getListing() {
     axios
-      .get(`/listings/${this.state.listingId}`)
+      .get(`/listings`, {
+        params: {
+          listingid: this.state.listingId
+        },
+        baseURL
+      })
       .then(response => {
         this.setState({listing: response.data[0]});
-        console.log(this.state.listing);
       })
       .catch(error => {
         console.log(error);
@@ -39,20 +46,20 @@ class App extends React.Component {
 
   render () {
     return (
-        <div className="container">
+        <div className="checkout-container">
           <BuyBox listingid={this.state.listingId} listing={this.state.listing}/>
-          <hr/>
+          <hr className="checkout-hr"/>
           <ListingDetails description={this.state.listing.description}/>
-          <hr/>
+          <hr className="checkout-hr"/>
           <ShippingDetails />
-          <hr />
+          <hr className="checkout-hr"/>
           <About listing={this.state.listing}/>
-          <hr />
+          <hr className="checkout-hr"/>
           <FAQ />
-          <hr />
+          <hr className="checkout-hr"/>
         </div>
     )
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('checkout'));

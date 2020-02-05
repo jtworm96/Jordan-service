@@ -10,11 +10,11 @@ export default class Details extends React.Component {
 
   render () {
     return (
-      <div className="details">
-        <div className={this.state.expanded ? "details-div-expanded" : "details-div-hidden"}>
+      <div className="checkout-details">
+        <div className={this.state.expanded ? "checkout-details-div-expanded" : "checkout-details-div-hidden"}>
           <span>{this.props.description}</span>
         </div>
-        <button className="details-expand" onClick={() => {this.state.expanded ? this.setState({expanded: false}) : this.setState({expanded: true})}}>{this.state.expanded ? "Less" : "Learn more about this item"}</button>
+        <button className="checkout-details-expand" onClick={() => {this.state.expanded ? this.setState({expanded: false}) : this.setState({expanded: true})}}>{this.state.expanded ? "Less" : "Learn more about this item"}</button>
       </div>
     )
   }

@@ -1,0 +1,11 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+      "Name": "sagerwilliams/checkoutdescription"
+    },
+    "Ports": [
+      {
+        "ContainerPort": "1337"
+      }
+    ]
+  }

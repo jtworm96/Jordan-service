@@ -11,37 +11,37 @@ export default class BuyBox extends React.Component {
     super(props);
     this.state = {
       products: {
-        1: {
+        651186954: {
           bestseller: false,
           types: [],
           inputType: {},
           quantity: 14
         },
-        2: {
+        721236096: {
           bestseller: true,
           types: [],
           inputType: {},
           quantity: 33
         },
-        3: {
+        742799622: {
           bestseller: false,
           types: ["Initial Charm"],
           inputType: {"dropdown":["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]},
           quantity: 4
         },
-        4: {
+        676514443: {
           bestseller: false,
           types: [],
           inputType: {},
           quantity: 1
         },
-        5: {
+        708762640: {
           bestseller: false,
           types: [],
           inputType: {},
           quantity: 3
         },
-        6: {
+        772719047: {
           bestseller: false,
           types: [],
           dropdowns: {},
@@ -54,8 +54,8 @@ export default class BuyBox extends React.Component {
 
   render () {
     return (
-      <div className="buy-box">
-        <Reviews username={this.props.listing.name} count={1337} />
+      <div className="checkout-buy-box">
+        <Reviews username={this.props.listing.name} count={this.props.listing.reviews} />
         <Title title={this.props.listing.title} />
         <Price saleprice={this.props.listing.price - 1 - Math.round(Math.random())} price={this.props.listing.price}/>
         <Variations product={this.state.products[this.props.listingid]} />
