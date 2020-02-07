@@ -10,7 +10,7 @@ export default function Reviews(props) {
           <img width="15px" src="https://upload.wikimedia.org/wikipedia/commons/7/78/BlackStar.PNG" alt="1-Star"/>
           <img width="15px" src="https://upload.wikimedia.org/wikipedia/commons/7/78/BlackStar.PNG" alt="1-Star"/>
           <img width="15px" src="https://upload.wikimedia.org/wikipedia/commons/7/78/BlackStar.PNG" alt="1-Star"/>
-          <a className="checkout-review-count" href="">({props.count})</a>
+          <a className="checkout-review-count" href="">({props.count || 36})</a>
         </div>
       </div>
   )

@@ -57,7 +57,7 @@ export default class BuyBox extends React.Component {
       <div className="checkout-buy-box">
         <Reviews username={this.props.listing.name} count={this.props.listing.reviews} />
         <Title title={this.props.listing.title} />
-        <Price saleprice={this.props.listing.price - 1 - Math.round(Math.random())} price={this.props.listing.price}/>
+        <Price price={this.props.listing.price}/>
         <Variations product={this.state.products[this.props.listingid]} />
         <BuyButtons />
         <Nudge />
