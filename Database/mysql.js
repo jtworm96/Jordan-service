@@ -7,10 +7,12 @@ const connection = mysql.createConnection({
   database : 'checkout_description_db'
 });
 
-connection.connect();
+// connection.connect(() => {
+//   console.log('connected to mySQL')
+// });
 
-let getListing = (id, callback) => {
-  connection.query('SELECT * FROM products WHERE id=' + id, (error, data) => {
+const getListingMySql = (id, callback) => {
+  connection.query('SELECT * FROM products WHERE listing_id=' + id, (error, data) => {
     if (error) {
       callback(error, null);
     } else {
@@ -19,4 +21,6 @@ let getListing = (id, callback) => {
   });
 };
 
-module.exports.getListing = getListing;
+module.exports = {
+  getListingMySql
+};

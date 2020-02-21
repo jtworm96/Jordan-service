@@ -1,34 +1,15 @@
-DROP DATABASE IF EXISTS checkout_description_db;
-
-CREATE DATABASE checkout_description_db;
-
-USE checkout_description_db;
-
-CREATE TABLE products (
-    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    title VARCHAR(255) NOT NULL,
-    description TEXT NOT NULL,
-    price FLOAT NOT NULL,
-    materials VARCHAR(255) NOT NULL
-);
-
-CREATE TABLE options (
-    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    product_id INT NOT NULL,
-    name VARCHAR(255) NOT NULL,
-    value VARCHAR(255) NOT NULL,
-    FOREIGN KEY (product_id) REFERENCES products(id)
-);
-
-CREATE TABLE sellers (
-    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    name VARCHAR(255) NOT NULL,
-    picture VARCHAR(255) NOT NULL,
-    location VARCHAR(255)
-);
-
-CREATE TABLE reviews (
-    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
-    count INT NOT NULL,
-    average FLOAT NOT NULL
-);
+CREATE DATABASE  IF NOT EXISTS `checkout_description_db`
+USE `checkout_description_db`;
+DROP TABLE IF EXISTS `products`;
+ 
+CREATE TABLE `products` (
+  `id` int(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `title` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  `price` float NOT NULL,
+  `materials` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `picture` varchar(255) NOT NULL,
+  `location` varchar(255) DEFAULT NULL,
+  `reviews` int(11) DEFAULT NULL,
+)

@@ -352,3 +352,11 @@ MigrationBackup/
 .env
 
 .node_modules
+
+data.csv
+
+migrations
+
+seeds
+
+knexfile.js

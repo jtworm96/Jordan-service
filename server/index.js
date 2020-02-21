@@ -1,48 +1,49 @@
+require('newrelic');
 const express = require('express');
+const app = express();
 const bodyparser = require('body-parser');
-// const db = require('Database/index.js');
-const mysql = require('mysql');
+const mysql = require('../Database/mysql');
+const pg = require('../Database/postgres');
+const mdb = require('../Database/mongodb')
 const cors = require('cors');
-let app = express();
+const port = 3000;
 
 app.use(express.static(__dirname + '/../client/dist'));
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());
 app.use(cors());
 
-const connection = mysql.createConnection({
-  host : 'fec-database.c3s7gc1wdbtz.us-east-2.rds.amazonaws.com',
-  user : 'root',
-  password : 'password',
-  database : 'checkout_description_db'
-});
-
-connection.connect();
-
-let getListing = (id, callback) => {
-  connection.query('SELECT * FROM products WHERE listing_id=' + id, (error, data) => {
-    if (error) {
-      callback(error, null);
-    } else {
-      callback(null, data);
-    }
-  });
-};
-
 app.get("/listings", (req, res) => {
-  getListing(req.query.listingid, (error, results) => {
-    if (error) {
-      console.error(error);
-    }
-    else {
+  mysql.getListingMySql(req.query.listingid, (err, results) => {
+    if (err) {
+      res.send(err);
+    } else {
       res.send(results);
     }
   });
 });
 
-let port = 1337;
+app.get("/listings1", (req, res) => {
+  pg.getListingPG(req.query.listingid, (err, results) => {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send(results);
+    }
+  });
+});
 
-app.listen(port, function() {
+app.get("/listings2", (req, res) => {
+  mdb.getListingMDB(req.query.listingid, (err, results) => {
+    if (err) {
+      res.send(err);
+    } else {
+      res.send(results);
+    }
+  });
+});
+
+app.listen(port, () => {
   console.log(`listening on port ${port}`);
 });
 
